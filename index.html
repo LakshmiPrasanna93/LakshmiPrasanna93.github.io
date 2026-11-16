@@ -78,6 +78,7 @@
   @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 
   .feature{display:grid;gap:24px}
+  .fcase{scroll-margin-top:80px}
   .fcase{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 28px 24px}
   .fcase h3{font-size:22px;margin:4px 0 6px}
   .fcase .ctx{color:var(--muted);margin:0 0 18px}
@@ -146,7 +147,7 @@
       <p class="sub">From fleet safety / video telematics SaaS. Anonymized: no company names, no confidential data. Happy to walk through any of them in detail.</p>
       <div class="feature">
 
-        <article class="fcase">
+        <article class="fcase" id="case-ai-assistant">
           <span class="tag">AI agent</span><span class="tag">Evals</span><span class="tag">0 → GA</span>
           <h3>Taking an enterprise AI assistant to GA, gated by evals</h3>
           <p class="ctx">Role: PM owner, from scoping through launch.</p>
@@ -161,7 +162,7 @@
           <p class="result"><b>Result:</b> GA across 60 eligible top-tier accounts, with an objective go/no-go bar and a regression net for every prompt change. Now building v2: a multi-agent system where admins confirm every change before it runs, with a full audit trail and 24-hour rollback.</p>
         </article>
 
-        <article class="fcase">
+        <article class="fcase" id="case-token-cost">
           <span class="tag">LLM cost</span><span class="tag">Prompt design</span>
           <h3>Cutting agent token cost 40–45% without losing quality</h3>
           <p class="ctx">Role: hands-on owner of the agent instruction files.</p>
@@ -176,7 +177,7 @@
           <p class="result"><b>Result:</b> about 40–45% fewer input tokens per sub-agent in the v2 multi-agent system, with eval scores held.</p>
         </article>
 
-        <article class="fcase">
+        <article class="fcase" id="case-audit-logs">
           <span class="tag">Platform</span><span class="tag">Compliance</span><span class="tag">Discovery</span>
           <h3>Audit logs, from zero to GA</h3>
           <p class="ctx">Role: PM owner across discovery, PRDs and phased delivery.</p>
