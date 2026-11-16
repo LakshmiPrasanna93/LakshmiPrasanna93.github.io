@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lakshmi — Senior Product Manager, AI & B2B SaaS</title>
+<meta name="description" content="Lakshmi is a Senior Product Manager building trustworthy AI assistants and admin platforms for enterprise SaaS. Case studies, builds and writing.">
+<meta property="og:title" content="Lakshmi — Senior Product Manager, AI & B2B SaaS">
+<meta property="og:description" content="Case studies in AI agents, evals and enterprise admin platforms, plus AI builds.">
+<style>
+  :root{
+    --bg:#fbfaf7; --surface:#ffffff; --text:#1c1b19; --muted:#5e5a53; --line:#e6e2da;
+    --accent:#b4532a; --accent-soft:#f6e7df; --radius:14px;
+    --max:960px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141311; --surface:#1d1c19; --text:#f1eee8; --muted:#a9a399; --line:#2f2d29;
+           --accent:#e58a5f; --accent-soft:#3a2419; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font:17px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--surface);padding:8px 12px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  header.nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);
+       backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  header.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  nav a{color:var(--muted);text-decoration:none;font-size:15px}
+  nav a:hover{color:var(--text)}
+  section{padding:72px 0;border-bottom:1px solid var(--line)}
+  .hero{padding:96px 0 72px}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+  h1{font-size:clamp(34px,5vw,52px);line-height:1.12;letter-spacing:-.025em;margin:0 0 20px;max-width:18ch}
+  h2{font-size:28px;letter-spacing:-.015em;margin:0 0 8px}
+  h3{font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
+  .lead{font-size:20px;color:var(--muted);max-width:60ch;margin:0 0 28px}
+  .sub{color:var(--muted);margin:0 0 32px;max-width:62ch}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;
+       border:1px solid var(--text);color:var(--text)}
+  .btn.primary{background:var(--text);color:var(--bg)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:48px}
+  .stat{border-top:2px solid var(--accent);padding-top:12px}
+  .stat b{display:block;font-size:26px;letter-spacing:-.02em}
+  .stat span{color:var(--muted);font-size:14px}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column}
+  .tag{display:inline-block;font-size:12px;font-weight:600;background:var(--accent-soft);color:var(--accent);
+       padding:3px 10px;border-radius:999px;margin:0 6px 10px 0}
+  .group{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:40px 0 16px}
+  .case dl{margin:12px 0 0;display:grid;gap:10px}
+  .case dt{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .case dd{margin:0}
+  .card p{margin:0 0 10px}
+  .card .more{margin-top:auto;padding-top:10px;font-weight:600;font-size:15px}
+  .timeline{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .timeline li{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:baseline;
+       padding:14px 0;border-bottom:1px dashed var(--line)}
+  .timeline time{color:var(--muted);font-variant-numeric:tabular-nums;font-size:15px}
+  .status{font-size:13px;color:var(--muted);white-space:nowrap}
+  .principles{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:18px;
+       grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .principles li{counter-increment:p}
+  .principles li::before{content:"0" counter(p);display:block;color:var(--accent);font-weight:700;font-size:14px;margin-bottom:6px}
+  footer{padding:56px 0 72px;color:var(--muted);font-size:15px}
+  .contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  @media (max-width:640px){
+    nav ul{gap:14px} nav li.opt{display:none}
+    .timeline li{grid-template-columns:1fr}
+    section{padding:56px 0}
+  }
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Lakshmi</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#builds">Builds</a></li>
+        <li class="opt"><a href="#approach">Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow">Senior Product Manager · AI &amp; B2B SaaS</p>
+      <h1>I build AI assistants enterprises can actually trust.</h1>
+      <p class="lead">I'm Lakshmi, a product manager in Bengaluru. I take AI agents from scoping to GA, with eval suites, guardrails and cost discipline built in. I also own the admin platforms they run on: roles and permissions, audit logs and self-serve provisioning.</p>
+      <div class="btns">
+        <a class="btn primary" href="#work">See case studies</a>
+        <a class="btn" href="https://github.com/LakshmiPrasanna93">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/lakshmi-prasanna-33449879/">LinkedIn</a>
+      </div>
+      <div class="stats" role="list">
+        <div class="stat" role="listitem"><b>200+</b><span>case LLM eval suite designed and owned</span></div>
+        <div class="stat" role="listitem"><b>~40%</b><span>input-token cut per agent after instruction rewrites</span></div>
+        <div class="stat" role="listitem"><b>48</b><span>access-control requirements audited end to end</span></div>
+        <div class="stat" role="listitem"><b>8</b><span>AI builds and PM automations shipped</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <h2 id="work-h">Selected work</h2>
+      <p class="sub">Case studies from enterprise B2B SaaS, kept generic. Product decisions only: no company names, no confidential data.</p>
+      <h3 class="group">AI agents &amp; LLM products</h3>
+      <div class="grid">
+        <article class="card case">
+          <div><span class="tag">AI agent</span><span class="tag">Launch</span></div>
+          <h3>Taking an enterprise AI assistant to GA</h3>
+          <dl>
+            <dt>Problem</dt><dd>Admins spent too long hunting for answers across complex admin screens.</dd>
+            <dt>What I did</dt><dd>Scoped a read-only Q&amp;A agent with tool calls per core module and role-based access enforced by the user's token. Evaluated a multi-agent supervisor design and deferred it because of the latency cost.</dd>
+            <dt>Outcome</dt><dd>Shipped single-agent to production, which set up a safe base for v2.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Evals</span><span class="tag">Quality</span></div>
+          <h3>Eval-driven launch gates</h3>
+          <dl>
+            <dt>Problem</dt><dd>"Looks good in the demo" isn't a launch criterion for enterprise AI.</dd>
+            <dt>What I did</dt><dd>Designed a 200+ case eval suite with P0 gates: tool selection ≥95%, parameter accuracy ≥90%, response quality ≥4/5, guardrails 100%. Known backlog bugs are kept out so the scores stay honest.</dd>
+            <dt>Outcome</dt><dd>Gave the team an objective go/no-go bar and a regression net for every prompt change.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Cost</span><span class="tag">Prompting</span></div>
+          <h3>Cutting agent token cost ~40% without losing quality</h3>
+          <dl>
+            <dt>Problem</dt><dd>Multi-agent instruction files were long, full of prohibition lists, and expensive on every call.</dd>
+            <dt>What I did</dt><dd>Rewrote each sub-agent with rule IDs, gold examples in place of "don't" lists, and handoffs that carry IDs between agents.</dd>
+            <dt>Outcome</dt><dd>About 40–45% fewer input tokens per agent, checked against the same eval gates.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">AI UX</span><span class="tag">Streaming</span></div>
+          <h3>Rendering tables in a streaming chatbot</h3>
+          <dl>
+            <dt>Problem</dt><dd>Tables streamed row by row arrived with unclear row boundaries and made the page jump.</dd>
+            <dt>What I did</dt><dd>Used evidence to show that tables add no generation latency. Chose to stream prose immediately and hold each table until it's complete, with a loading indicator.</dd>
+            <dt>Outcome</dt><dd>A stable, readable chat UI at no cost to perceived speed.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">AI agent</span><span class="tag">Strategy</span></div>
+          <h3>Scoping v2: from answering questions to taking actions</h3>
+          <dl>
+            <dt>Problem</dt><dd>Users wanted the assistant to change settings, not just explain them.</dd>
+            <dt>What I did</dt><dd>Scoped write actions and knowledge-base integration for top-level admins. Made audit-trail support a hard dependency, so every AI-made change is traceable.</dd>
+            <dt>Outcome</dt><dd>An MVP with a clear dependency path that keeps trust in place as the agent gains power.</dd>
+          </dl>
+        </article>
+      </div>
+      <h3 class="group">Admin, trust &amp; self-serve platforms</h3>
+      <div class="grid">
+        <article class="card case">
+          <div><span class="tag">Compliance</span><span class="tag">Platform</span></div>
+          <h3>Audit logs, from zero to GA</h3>
+          <dl>
+            <dt>Problem</dt><dd>Customers couldn't see who changed what, and the history that did exist was spread across legacy modules.</dd>
+            <dt>What I did</dt><dd>Ran customer discovery on retention needs, usage patterns and pricing sentiment. Wrote PRDs for field-level diffs, grouping of bulk updates, tiered retention (soft and hard archive) and tombstones for deleted entities.</dd>
+            <dt>Outcome</dt><dd>Phase 1 went GA across three core modules and Phase 2 is shipped. Legacy unification is planned next.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Access control</span><span class="tag">Discovery</span></div>
+          <h3>Roles &amp; permissions gap analysis</h3>
+          <dl>
+            <dt>Problem</dt><dd>Gaps in the permission model blocked enterprise admins from delegating safely.</dd>
+            <dt>What I did</dt><dd>Audited 48 requirements across 9 story areas. Found a critical missing story (role deletion), and ruled out a composite-role approach as too complex for the value it added.</dd>
+            <dt>Outcome</dt><dd>A complete, prioritized PRD that engineering could build against with confidence.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Configuration</span><span class="tag">Architecture</span></div>
+          <h3>Hierarchical settings with inheritance</h3>
+          <dl>
+            <dt>Problem</dt><dd>Large customers needed settings applied at the group level, with overrides that can be inherited.</dd>
+            <dt>What I did</dt><dd>Shipped group-level provisioning with pin/unpin overrides and reset-to-inherit. Split the plan into a short-term extension of the UI and a long-term, config-driven metadata registry, and drafted the engineering spike for it.</dd>
+            <dt>Outcome</dt><dd>Unblocked large accounts now, with a path off hardcoded settings screens.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Self-serve</span><span class="tag">Analytics</span></div>
+          <h3>Self-serve setup for AI-powered alerts</h3>
+          <dl>
+            <dt>Problem</dt><dd>Customers relied on support to turn AI detection alerts on, off or tune them.</dd>
+            <dt>What I did</dt><dd>Delivered Phase 2 of self-serve configuration. Instrumented analytics with a dirty-flag pattern so only real changes are tracked. Wrote warning copy to keep cross-domain alert windows consistent.</dd>
+            <dt>Outcome</dt><dd>Fewer support tickets, and clean usage data to prioritize what's next.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Prototype</span><span class="tag">AI velocity</span></div>
+          <h3>Program snapshot: one view of a complex configuration</h3>
+          <dl>
+            <dt>Problem</dt><dd>Admins had no single place to see how their program was configured across a deep group hierarchy.</dd>
+            <dt>What I did</dt><dd>Built an interactive HTML prototype of a centralized configuration view in days, using AI-assisted prototyping.</dd>
+            <dt>Outcome</dt><dd>Presented to a CTO-level audience as a demonstration of faster PM delivery with AI.</dd>
+          </dl>
+        </article>
+      </div>
+      <h3 class="group">Monetization &amp; leadership</h3>
+      <div class="grid">
+        <article class="card case">
+          <div><span class="tag">Pricing</span><span class="tag">Packaging</span></div>
+          <h3>Feature-based tiering</h3>
+          <dl>
+            <dt>Problem</dt><dd>Features were packaged inconsistently, and self-serve features were hit hardest.</dd>
+            <dt>What I did</dt><dd>Worked on a three-tier, feature-based packaging model and led cross-functional classification of new capabilities into tiers. Built a prototype of a trial gate.</dd>
+            <dt>Outcome</dt><dd>A shared language for packaging decisions across product, sales and leadership.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Incident</span><span class="tag">Ownership</span></div>
+          <h3>Leading a beta incident to resolution</h3>
+          <dl>
+            <dt>Problem</dt><dd>A beta rollout unintentionally switched off an existing feature for 10+ customers.</dd>
+            <dt>What I did</dt><dd>Coordinated the cross-team escalation: scoping the impact, restoring service, communicating with customers, and adding rollout safeguards.</dd>
+            <dt>Outcome</dt><dd>Fast recovery, and a stricter beta checklist for every team after.</dd>
+          </dl>
+        </article>
+        <article class="card case">
+          <div><span class="tag">Roadmap</span><span class="tag">Prioritization</span></div>
+          <h3>Replanning a roadmap through a reorg</h3>
+          <dl>
+            <dt>Problem</dt><dd>Teams shrank to 2–3 people, dedicated QA went away, and the product began merging into a unified platform.</dd>
+            <dt>What I did</dt><dd>Cut and resequenced the quarterly roadmap against company strategy, customer commitments and delivery risk. Platform-integration work moved to the front.</dd>
+            <dt>Outcome</dt><dd>A smaller, realistic roadmap the team could commit to.</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="builds" aria-labelledby="builds-h">
+    <div class="wrap">
+      <h2 id="builds-h">Builds &amp; side projects</h2>
+      <p class="sub">Things I've built myself with AI. Prototypes, agents and PM automation, each with the product reasoning behind it.</p>
+      <ul class="timeline">
+        <li><span class="tag">Agent</span><span><a href="https://github.com/LakshmiPrasanna93/career-ops-agent"><b>career-ops-agent</b></a>: A Claude-powered agent that automates job-search operations: finding roles, tailoring materials and tracking applications.</span></li>
+        <li><span class="tag">Agent + PRD</span><span><b>Foldline</b>: An AI agent prototype, shipped with a full PRD covering problem, users, metrics and trade-offs.</span></li>
+        <li><span class="tag">Collab</span><span><b>Signal over slop</b>: An AI tool that cuts through noise to surface the one problem that matters. Co-built with another PM.</span></li>
+        <li><span class="tag">Automation</span><span><b>PM skill pack for Claude</b>: Reusable Claude skills that turn a brief into a PRD, a product brief, Jira epics and a branded deck. A standing user persona is built in, so every output stays user-centred.</span></li>
+        <li><span class="tag">Automation</span><span><b>Instruction-sync agent</b>: A Claude Code workflow that turns structured YAML specs into versioned AI-agent instruction files, so prompt changes stay reviewable.</span></li>
+        <li><span class="tag">Research</span><span><b>Competitive teardown workflow</b>: A CLAUDE.md-driven workflow that compares competitors' admin and settings experiences side by side.</span></li>
+        <li><span class="tag">Tool</span><span><b>Smart search CLI</b>: A command-line tool for fast, structured search across GitHub repositories.</span></li>
+        <li><span class="tag">Web</span><span><a href="https://github.com/LakshmiPrasanna93/LakshmiPrasanna93.github.io"><b>This portfolio</b></a>: Built and documented like a product: one HTML file, no build step, accessible from day one.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-h">
+    <div class="wrap">
+      <h2 id="approach-h">How I work</h2>
+      <p class="sub">The principles I bring to AI products.</p>
+      <ol class="principles">
+        <li><h3>Evals before launch dates</h3><p>A model is ready when it passes the gates, not when the sprint ends. I define P0 thresholds up front.</p></li>
+        <li><h3>Ship the boring version first</h3><p>Single-agent, read-only, scoped by role. Complexity gets added only when the data asks for it.</p></li>
+        <li><h3>Tokens are a product cost</h3><p>Latency and spend are UX. I treat prompt size the way I'd treat page weight.</p></li>
+        <li><h3>Trust is a feature</h3><p>Audit trails, permissions and guardrails are what make an AI agent safe for enterprise use.</p></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Open to conversations about AI product management, agent design and B2B SaaS platforms.</p>
+    <div class="contact">
+      <a class="btn primary" href="https://www.linkedin.com/in/lakshmi-prasanna-33449879/">LinkedIn</a>
+      <a class="btn" href="https://github.com/LakshmiPrasanna93">GitHub</a>
+    </div>
+    <p style="margin-top:40px">© 2026 Lakshmi · Built with plain HTML/CSS, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+</body>
+</html>
